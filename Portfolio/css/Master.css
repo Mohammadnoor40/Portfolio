@@ -389,3 +389,46 @@ border-bottom: 3px solid orangered;
         display: none;
     }
 }
+.accordion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%; 
+    margin: auto; 
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(255 69 0);
+}
+
+.accordion-heading {
+    cursor: pointer;
+}
+
+.accordion-content {
+    visibility: hidden;
+    padding: 10px;
+    text-align: left;
+    overflow: hidden;
+    transition: visibility 0.3s ease; 
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+@media screen and (max-width: 768px) {
+    .accordion {
+        width: 90%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .accordion {
+        width: 95%;
+    }
+}
