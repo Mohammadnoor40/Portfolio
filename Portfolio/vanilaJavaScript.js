@@ -24,3 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = this.href; 
     });
 });
+document.getElementById('dark-mode-toggle').addEventListener('click', function () {
+    document.body.classList.toggle('dark-mode');
+});
